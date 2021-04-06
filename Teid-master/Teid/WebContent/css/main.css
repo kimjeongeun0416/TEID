@@ -1,0 +1,627 @@
+/* 전체 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+/* 메뉴 */
+#navTop {
+    position: fixed;
+    height: 50px;
+    background: #eeeeee;
+    width: 100%;
+    z-index: 2;
+    opacity: 0.7
+}
+
+#navTop > ul {
+    overflow: hidden;
+    margin-left: 50px;
+}
+
+#navTop > ul > li {
+    float: left;
+    padding: 0 20px;
+    height: 50px;
+}
+
+#navTop > ul > li.active,
+#navTop > ul > li.active > a {
+    font-size:1em;
+    background: #daed22;
+    font-weight: bold;
+    color: orange;
+}
+
+#navTop > ul > li > a {
+    display: block;
+    line-height: 50px;
+    text-align: center;
+}
+
+.img_logo {
+    width:45px;
+    margin-top:3px;
+}
+
+.mypage {
+    position: absolute;
+    right: 250px;
+}
+
+.logsin {
+    position: absolute;
+    right: 100px;
+}
+
+#fullpage {
+    width: 100%;
+    height: 100%;
+}
+
+.pages {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+/* page별 배경이미지 */
+#page1 {
+    background-image: url(../images/img_home_01.jpg);
+}
+
+#page2 {
+    background-image: url(../images/img_home_02.jpg);
+}
+
+#page3 {
+    background-image: url(../images/img_home_03.jpg);
+}
+
+#page4 {
+    background-image: url(../images/img_home_04.jpg);
+}
+
+#page5 {
+    background-image: url(../images/img_home_05.jpg);
+}
+
+.main_cnt {
+    width: 30%;
+    margin-left: 100px;
+}
+
+/* 첫 페이지 */
+#home {
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 10px;
+}
+
+#home {
+    text-align: center;
+}
+
+#home .big_logo {
+    filter:drop-shadow(1px 1px 2px #292929);
+}
+#home p:nth-child(2) {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#home a {
+    margin: auto;
+    margin-top: 200px;
+    background: #8ed400;
+    font-size:0.9em;
+    border:none;
+    border-radius: 10px;
+}
+
+.main_cnt p {
+    _text-shadow: 1px 1px 2px #292929;
+    color: #fff;
+    font-weight: bold;
+}
+
+.main_cnt p:nth-child(1) {
+    font-size: 4em;
+}
+
+.main_cnt p:nth-child(2) {
+    font-size: 2em;
+}
+
+.main_cnt a {
+    width: 150px;
+    border: 1px solid #fff;
+    color: #fff;
+    display: block;
+    line-height: 45px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+#info {
+    clear: both;
+    width:100%;
+    margin-left:300px;
+}
+
+#info > p {
+	width:1280px;
+	font-size:55px;
+	text-align:center;
+	color:green;
+}
+
+#info > p:last-child {
+	width:1200px;
+	margin-top:30px;
+	margin-left:10px;
+	color:#fff;
+	font-size:30px;
+	text-align:center;
+	word-break: keep-all;
+}
+/*식단왕*/
+#diet {
+    float: left;
+    margin-top: 60px;
+}
+
+#diet > p:first-child {
+	color:green;
+}
+
+#diet > p {
+	text-shadow : 1px 1px 2px #292929;
+}
+.grid-box {
+    overflow: hidden;
+    width: 1100px;
+    height: 500px;
+    margin-left: 10px;
+}
+
+#diet > a {
+    font-weight: 800;
+    color:black;
+    background:white;
+    border-radius:10px;
+}
+
+.grid-item {
+    position: relative;
+    float: left;
+    width: 330px;
+    height: 440px;
+    background-color: rgba(236, 250, 207, 0.9);
+    _filter: alpha(opacity=60);
+    margin-left: 23px;
+    margin-right: 10px;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+
+.grid-item .king {
+    position: absolute;
+    top: -30px;
+    left: -20px;
+    transform: rotate(-17deg);
+    margin: 0;
+    z-index: 1;
+    width: 130px;
+}
+
+.grid-item > img {
+    opacity: 1;
+    margin-left: 60px;
+    margin-top: 50px;
+}
+
+.grid-item > p {
+    font-size: 1.6em;
+    text-align: center;
+    margin-top: 70px;
+}
+
+/* 추천 식단 탭메뉴*/
+
+.tab_wrap {
+    width: 80%;
+    margin: 0px auto;
+    margin-bottom:30px;
+}
+
+ul.tab {
+    overflow: hidden;
+    width: 1500px;
+}
+
+ul.tab > li {
+    float: left;
+    width: 20%;
+    height: 50px;
+    border-bottom: 3px solid #cdcdcd;
+    background: #EFF0EC;
+    border-radius: 10px 10px 0 0;
+}
+
+ul.tab > li > a {
+    display: block;
+    line-height: 50px;
+    text-align: center;
+    color: #000;
+}
+
+ul.tab > li.selected {
+    background: #8ed400;
+    font-weight: bold;
+    border-radius: 10px 10px 0 0;
+}
+
+.tab_lst {
+    width: 1500px;
+    height: 600px;
+    background: rgba(239, 240, 236, 0.9);
+    border-radius: 0 0 10px 10px;
+}
+
+.tab_cnt {
+    float: left;
+    width: 100%;
+    height: 600px;
+}
+
+.tab_item_lst {
+    background: #E0E5D1;
+    float: left;
+    width: 450px;
+    margin-left: 35px;
+    margin-top: 20px;
+    height: 550px;
+}
+
+.tab_item_cnt > li {
+    float: left;
+    font-size: 1em;
+    margin: 10px;
+    padding:5px;
+}
+
+.tab_item_cnt > li:nth-child(2n-1) {
+    clear: both;
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tab_item_cnt > li:nth-child(2n) {
+    width: 80px;
+    height: 30px;
+    margin-left:10px;
+    background: #8ed400;
+    color: white;
+    border-radius: 5px;
+    font-size: 0.8em;
+    text-align: center;
+    line-height: 30px;
+}
+
+.tab_item_cnt > li > a{
+   	color:white;
+}
+
+.tab_item_cnt {
+    float: left;
+    margin: 20px 20px;
+}
+
+.all_diet {
+    clear: both;
+    width: 180px;
+    height: 50px;
+    background: #8ed400;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 auto;
+    font-size:0.8em;
+}
+
+.all_diet a {
+    color: #fff;
+}
+
+/*식단 추가 시간 모달창*/
+.modal_bg {
+    display: none;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+/*식단정보 및 선택 모달창*/
+.food_time_modal {
+    display:none;
+    width: 600px;
+    height: 880px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin: -250px 0 0 -250px;
+    background: #eee;
+    z-index: 2;
+    border-radius: 15px;
+}
+
+.modal_cnt {
+    font-size:1em;    
+}
+.modal_cnt h2 {
+    text-align: center;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+#food_info_modal {
+    _background:lightpink;
+    width:550px;
+    height:600px;
+    margin-left:25px;    
+}
+
+#food_info_modal>p {
+    font-size:1.3em;
+    border-bottom:2px solid #000;    
+}
+.food_info {
+    _background:skyblue;
+    clear: both;
+    width:330px;
+    height:360px;
+    margin:10px auto;
+}
+.food_info li {
+    position:relative;
+    float: left;
+    font-size:1.3em;
+}
+.food_info li:nth-child(2n-1):after {
+    position: absolute;
+    content: "";
+    width:400px;
+    height:1px;
+    background:#000;
+    bottom:0px;
+    left:-10px;
+    
+}
+.food_info li:nth-child(2n-1) {
+    _background:lightyellow;
+    clear: both;
+    width:200px;
+    height:40px;
+    line-height: 40px;
+}
+.food_info li:nth-child(2n) {
+    _background:lightgreen;
+    width:100px;
+    height:40px;
+    margin-left:30px;
+    line-height: 40px;
+}
+.food_info .sm_txt {
+    width:170px !important;
+    margin-left:30px;
+    font-size:1.1em;
+}
+
+.food_info .sm_txt:after {
+    position: absolute;
+    content: "";
+    width:370px !important;
+    height:1px;
+    background:#000;
+    bottom:0px;
+    left:-10px;
+}
+#select_time_modal {
+    background:#EAF9C9;
+    width:550px;
+    height:150px;
+    margin-left:25px;
+    border-radius: 10px;
+    padding-top:5px;
+}
+#select_time_modal input {
+    width:15px;
+    height:15px;
+    margin-left:55px;
+}
+#select_time_modal label {
+    font-size: 1.2em;
+}
+.modal_ok {
+    width:80px;
+    height:50px;
+    position: absolute;
+    right:20px;
+    bottom:20px;
+    font-size:20px;
+    background:#8ed400;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+    color:white;
+}
+.modal_cancle {
+    width:80px;
+    height:50px;
+    position: absolute;
+    right:120px;
+    bottom:20px;
+    font-size:20px;
+    background:#D3D3D3;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+    color:white;
+    
+}
+
+/* 모달창 구버전  */
+/*
+.modal_bg {
+    display: none;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.select_time_modal {
+    display:none;
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -250px 0 0 -250px;
+    background: #eee;
+    z-index: 2;
+    border-radius: 15px;
+}
+
+.modal_cnt {
+    font-size:1em;    
+}
+.modal_cnt h2 {
+    text-align: center;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.modal_cnt input {
+    width:50px;
+    height:20px;  
+    margin-top:20px;
+    margin-left:30px;    
+}
+
+.modal_cnt label {
+    font-size:20px;
+}
+
+.modal_close {
+    width:80px;
+    height:50px;
+    position: absolute;
+    right:110px;
+    bottom:20px;
+    font-size:20px;
+    background:#D3D3D3;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+    color:white;    
+}
+
+.modal_ok {
+    width:80px;
+    height:50px;
+    position: absolute;
+    right:20px;
+    bottom:20px;
+    font-size:20px;
+    background:#8ed400;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+    color:white;    
+}
+*/
+
+
+
+/*contact us 부분*/
+
+#contact {
+    width: 90%;
+    height: 700px;
+}
+
+.contact_title {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contact_title p {
+    text-align: center;
+}
+
+.contact_cnt {
+    width: 80%;
+    height: 300px;
+    margin: 100px auto;
+}
+
+.contact_cnt img {
+    width: 100px;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.contact_cnt p {
+    font-size: 1.5em !important;
+    text-shadow: none;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contact_address {
+    float: left;
+    width: 300px;
+    margin-left: 120px;
+}
+
+.contact_address > p {
+    font-size: 1.3em !important;
+    text-shadow: none;
+    text-align: center;
+    margin-top: 50px;
+    word-break: keep-all;
+}
+
+.contact_phone {
+    float: left;
+    width: 300px;
+    margin-left: 120px;
+}
+
+.contact_email {
+    float: left;
+    width: 300px;
+    margin-left: 120px;
+}

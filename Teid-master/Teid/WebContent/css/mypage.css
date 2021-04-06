@@ -1,0 +1,311 @@
+/* 전체 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*메뉴*/
+#navTop {
+    position: fixed;
+    top:0;
+    height: 50px;
+    background: #eeeeee;
+    width: 100%;
+    z-index: 2;
+    opacity: 0.7
+}
+
+#navTop > ul {
+    overflow: hidden;
+    margin-left: 50px;
+}
+
+#navTop > ul > li {
+    float: left;
+    padding: 0 20px;
+    height: 50px;
+}
+
+#navTop > ul > li.active,
+#navTop > ul > li.active > a {
+    background: #daed22;
+    font-weight: bold;
+    color: orange;
+}
+
+#navTop > ul > li > a {
+    display: block;
+    line-height: 50px;
+    text-align: center;
+}
+/* 로고 사이즈 / 위치 조정 */
+.img_logo {
+    width:45px;
+    margin-top:3px;
+}
+/* mypage, login/signin 위치 조정 */
+.mypage {
+    position:absolute;
+    right:250px;
+}
+.logsin {
+    position:absolute;
+    right:100px;
+}
+
+#wrap {
+    width: 100%;
+}
+
+/*header*/
+#header {
+    width:100%;
+    height:250px;
+}
+#header .hd_title {
+    position:relative;
+    top:50px;
+    margin:0 auto;
+    width:1200px;
+    height:200px;
+    
+}
+#header .hd_title h2 {
+    position: absolute;
+    top:40px;
+    left:0;
+    width:130px;
+    height:40px;
+    text-align: center;
+    line-height: 40px;
+    
+}
+#header .hd_title h4 {
+    position: absolute;
+    margin:0 auto;
+    top:80px;
+    left:500px;
+    font-size:2em;
+    text-align: center;
+    
+    
+}
+#header .info_edit {
+    background: #8ed400;
+    position: absolute;
+    top:80px;
+    right:0px;
+    width:150px;
+    height:40px;
+    font-size:1.3em;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 10px;
+}
+#header .info_edit a {
+    color:white;
+}
+
+#contents {
+    clear: both; /* float 기능 초기화 */
+    width:100%;
+    height:700px;
+    
+}
+
+/*점수확인부분*/
+.myScore {
+	background-color: rgba(205, 223, 167, 0.5);
+	_background:#CDDFA7;
+	width:200px;
+	height:160px;
+	float:left;
+	margin-left:350px;
+	border-radius:10px;
+}
+.myScore p {
+	font-size:1.2em;
+	margin-top:15px;
+	margin-left:50px;
+}
+
+.myScore p:last-child {
+	margin-left:20px !important;
+}
+/*캘린더*/
+#calendar {
+    margin-left:650px;
+    text-align: center;
+    background-color:aliceblue;
+    border-radius: 10px;
+}
+#calendar tr td {
+    width:80px;
+    height:80px;
+    font-size:1.5em;
+    margin:20px;
+}
+#calendar tr:first-child td {
+    font-weight: bold;
+    border:none;
+    font-size:2em;
+}
+
+#calendar tr:nth-child(2) td {
+    border-bottom:2px solid #8ed400;    
+}
+
+/*캘린더 식단 기록 모달창 */
+/*모달창*/
+
+/* 모달창 열렸을때 어두워지는 화면 */
+#modal_bg {
+    display: none;
+    position: fixed;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#rec_diet_modal {
+    display:none;
+    width: 700px;
+    height: 1000px;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    margin: -250px 0 0 -250px;
+    background: #eee;
+    z-index: 2;
+    border-radius: 15px;
+    
+}
+
+.modal_cnt {
+    _background:lightgray;
+    font-size:1em;
+    
+}
+.modal_cnt h2 {
+    text-align: center;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+#diet_lst{
+    _background: lightgoldenrodyellow;
+    width:630px;
+    height:500px;  
+    margin-top:20px;
+    margin-left:30px;    
+}
+
+.d_lst {
+    background:#FBF6DB;
+    width:260px;
+    height:200px;
+    margin:10px;
+    padding:15px;
+}
+
+.d_lst:nth-child(2n-1) {
+    _background:lightpink;
+    float:left;
+    
+}
+.d_lst:nth-child(2n) {
+    _background:lightblue;
+    float:left;
+}
+.diet_memo {
+    margin-top:30px;
+    margin-left:90px;
+}
+
+.noresize {
+    width: 500px;
+    height:200px;
+    font-size:20px;
+    resize:vertical;
+}
+#modal_close {
+    width:80px;
+    height:50px;
+    position: absolute;
+    right:20px;
+    bottom:20px;
+    font-size:20px;
+    background:lightgray;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+    color:white;
+}
+
+#btn_save {
+    width:80px;
+    height:50px;
+    position: absolute;
+    right:110px;
+    bottom:20px;
+    font-size:20px;
+    background:#8ed400;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+    color:white;  
+}
+
+#btn_save > a {
+    color:white;  
+}
+
+.d_grade {
+    _background: lightsalmon;
+    width: 700px;
+    height: 100px;
+    position: relative;
+    top:15px;
+}
+#good_icon {
+    display:block;
+    width:65px;
+    position: absolute;
+    right:150px;
+}
+
+#good_icon_s {
+    display:none;
+    width:65px;
+    position: absolute;
+    right:150px;
+}
+
+#bad_icon {
+    display:block;
+    width:65px;
+    position: absolute;
+    right:45px;
+
+}
+
+#bad_icon_s {
+    display:none;
+    width:65px;
+    position: absolute;
+    right:45px;
+
+}

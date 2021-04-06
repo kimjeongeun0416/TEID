@@ -1,0 +1,101 @@
+/*전체*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#wrap {
+  width:100%;
+}
+
+.signup_area {
+	width:460px;
+	margin:50px auto;
+}
+
+.signup_logo {
+	width:460px;
+	margin:20px auto;
+}
+
+.signup_logo img {
+	width:200px;
+	margin-left:130px;
+}
+
+.signup_area .signup_form {
+	background : #E0E5D1;
+	width:460px;
+	border-radius: 10px;
+}
+
+.signup_lst {
+	width:460px;
+	height:500px;
+	margin:0 auto;
+}
+
+.img_sel {
+	padding:10px;
+}
+.profile_area {
+	width:100px;
+	height:100px;
+	margin-top:20px;
+	margin-left:180px;
+	_background:lightseagreen;
+	border-radius: 50%;
+}
+
+.profile_img {
+	width:100px;
+	margin-top:20px;
+	margin-left:180px;
+}
+.signup_lst > tr {
+	width:300px;
+	margin : 30px;
+}
+.signup_lst tr td:nth-child(2n-1){
+	width:130px;
+	height:80px;
+	margin : 30px;
+}
+
+.signup_lst tr td:nth-child(2n) {
+	width:180px;
+	height:80px;
+	margin-left:30px;
+}
+.signup_lst tr td .signup_input {
+	height:20px;
+	margin-left:30px;
+}
+
+#dt {
+	margin-right: 20px;
+    height: 30px;
+}
+.btn_signup {
+	width:100px;
+	height:30px;
+	background:#8ed400;
+	border:none;
+	border-radius: 10px;
+	margin-left:30px;
+	color:#ffffff;
+	font-size:1em;
+}
+
+.btn_signup:last-child {
+	background:lightgray;
+}

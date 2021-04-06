@@ -1,0 +1,399 @@
+/* 전체 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+/*메뉴*/
+#navTop {
+    position: fixed;
+    top:0;
+    height: 50px;
+    background: #eeeeee;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.7
+}
+
+#navTop > ul {
+    overflow: hidden;
+    margin-left: 50px;
+}
+
+#navTop > ul > li {
+    float: left;
+    padding: 0 20px;
+    height: 50px;
+}
+
+#navTop > ul > li.active,
+#navTop > ul > li.active > a {
+    background: #daed22;
+    font-weight: bold;
+    color: orange;
+}
+
+#navTop > ul > li > a {
+    display: block;
+    line-height: 50px;
+    text-align: center;
+}
+
+.img_logo {
+    width:45px;
+    margin-top:3px;
+}
+
+.mypage {
+    position:absolute;
+    right:250px;
+}
+.logsin {
+    position:absolute;
+    right:100px;
+}
+#wrap {
+    width: 100%;
+}
+#header {
+    clear:both;
+}
+.myDiet {
+    width: 1200px;
+    height:600px;
+    margin:80px auto;
+    background:#e6fac4;
+    border-radius: 20px;
+}
+.myDiet h2 {
+    margin-top : 30px;
+    margin-left: 40px;
+    padding-top:20px;
+}
+.all_diet_lst {
+    background:#fcf6d8;
+    width:270px;
+    height:420px;
+    float:left;
+    margin-left:17px;
+    margin-right:10px;
+    margin-top:30px;
+}
+
+.all_diet_cnt li:not(:first-child) {
+    font-size: 1.1em;
+    font-weight:bold;
+    margin-top:20px;
+    text-align:center;
+}
+
+.all_diet_cnt li:first-child {
+    font-size: 1.3em;
+    font-weight:bold;
+    margin-left:40%;
+    margin-top:20px;
+}
+
+.date_sel {
+	width:130px;
+	height:50px;
+	margin-left:700px;
+	margin-top:490px;
+}
+
+.btn_reset {
+	width:120px;
+	height:50px;
+	border-radius: 5px;
+    background:#D3D3D3;
+    margin-left:850px;
+    margin-top:-65px;
+    text-align: center;
+    line-height: 50px;	
+}
+
+.btn_reset > a {
+	color:white;
+}
+.save_diet {
+    width:120px;
+    height:50px;
+    border-radius: 5px;
+    background:#8ed400;
+    margin-left:1000px;
+    margin-top:-50px;
+    text-align: center;
+    line-height: 50px;
+}
+.save_diet> a {
+    color:white;    
+}
+#contents {
+    _background:lightblue;
+    position: relative;
+    width:1200px;
+    height:700px;
+    margin : 80px auto;
+}
+#contents h2 {
+    text-align: center; 
+    position: absolute;
+    top:0px;
+    left:45%;
+}
+.search_ctg {
+    float:left;
+    position: absolute;
+    right:480px;
+    top:70px;
+    
+}
+#ctg{
+    height:30px;
+}
+.search_sch {
+    position: absolute;
+    right:200px;
+    top:70px;
+}
+
+.search_sch > input{
+    width:200px;
+    height:26px;
+}
+
+.search_sch > button{
+    width:40px;
+    height:26px;
+}
+
+
+
+.diet_lst{
+    width:80%;
+    position: absolute;
+    top:120px;
+    left: 10%;
+    text-align: center;
+}
+.diet_lst th{
+    background:#8ed400;
+    height:50px;
+}
+.diet_lst tr{
+    background:lightpink;
+    height:50px;
+    width:auto;
+}
+.diet_lst td{
+    background:lightyellow;
+    height:30px;
+}
+
+/*모달창*/
+
+.modal_bg {
+    display: none;
+    position: fixed;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/*식단확인 모달창*/
+.save_modal {
+    display:none;
+    width: 400px;
+    height: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -250px 0 0 -250px;
+    background: #eee;
+    z-index: 2;
+    border-radius: 15px;
+}
+
+.save_modal_ok {
+    width:80px;
+    height:50px;
+    position: absolute;
+    right:20px;
+    bottom:20px;
+    font-size:20px;
+    background:#8ed400;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+    color:white;    
+}
+
+.save_modal_ok > a{
+	color:white; 
+}
+
+.save_modal_cancle {
+    width:80px;
+    height:50px;
+    position: absolute;
+    right:120px;
+    bottom:20px;
+    font-size:20px;
+    background:#D3D3D3;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+    color:white;    
+}
+
+/*식단정보 및 선택 모달창*/
+.food_time_modal {
+    display:none;
+    width: 600px;
+    height: 880px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin: -250px 0 0 -250px;
+    background: #eee;
+    z-index: 2;
+    border-radius: 15px;
+}
+
+.modal_cnt {
+    font-size:1em;    
+}
+.modal_cnt h2 {
+    text-align: center;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+#food_info_modal {
+    _background:lightpink;
+    width:550px;
+    height:600px;
+    margin-left:25px;    
+}
+
+#food_info_modal>p {
+    font-size:1.3em;
+    border-bottom:2px solid #000;    
+}
+.food_info {
+    _background:skyblue;
+    clear: both;
+    width:330px;
+    height:360px;
+    margin:10px auto;
+}
+.food_info li {
+    position:relative;
+    float: left;
+    font-size:1.3em;
+}
+.food_info li:nth-child(2n-1):after {
+    position: absolute;
+    content: "";
+    width:400px;
+    height:1px;
+    background:#000;
+    bottom:0px;
+    left:-10px;
+    
+}
+.food_info li:nth-child(2n-1) {
+    _background:lightyellow;
+    clear: both;
+    width:200px;
+    height:40px;
+    line-height: 40px;
+}
+.food_info li:nth-child(2n) {
+    _background:lightgreen;
+    width:100px;
+    height:40px;
+    margin-left:30px;
+    line-height: 40px;
+}
+.food_info .sm_txt {
+    width:170px !important;
+    margin-left:30px;
+    font-size:1.1em;
+}
+
+.food_info .sm_txt:after {
+    position: absolute;
+    content: "";
+    width:370px !important;
+    height:1px;
+    background:#000;
+    bottom:0px;
+    left:-10px;
+}
+#select_time_modal {
+    background:#EAF9C9;
+    width:550px;
+    height:150px;
+    margin-left:25px;
+    border-radius: 10px;
+    padding-top:5px;
+}
+
+#select_date {
+    width:120px !important;
+    height:20px !important;
+    margin-bottom:10px;
+}
+#select_time_modal input {
+    width:15px;
+    height:15px;
+    margin-left:55px;
+}
+#select_time_modal label {
+    font-size: 1.2em;
+}
+.modal_ok {
+    width:80px;
+    height:50px;
+    position: absolute;
+    right:20px;
+    bottom:20px;
+    font-size:20px;
+    background:#8ed400;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+    color:white;
+}
+.modal_cancle {
+    width:80px;
+    height:50px;
+    position: absolute;
+    right:120px;
+    bottom:20px;
+    font-size:20px;
+    background:#D3D3D3;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+    color:white;
+    
+}
+
+#search_foods {
+	
+	width: 40px;
+}

@@ -1,0 +1,150 @@
+/*전체*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+/*메뉴*/
+#navTop {
+    position: fixed;
+    top:0;
+    height: 50px;
+    background: #eeeeee;
+    width: 100%;
+    z-index: 2;
+    opacity: 0.7
+}
+
+#navTop > ul {
+    overflow: hidden;
+    margin-left: 50px;
+}
+
+#navTop > ul > li {
+    float: left;
+    padding: 0 20px;
+    height: 50px;
+}
+
+#navTop > ul > li.active,
+#navTop > ul > li.active > a {
+    background: #daed22;
+    font-weight: bold;
+    color: orange;
+}
+
+#navTop > ul > li > a {
+    display: block;
+    line-height: 50px;
+    text-align: center;
+}
+
+.img_logo {
+    width:45px;
+    margin-top:3px;
+}
+
+.mypage {
+    position:absolute;
+    right:250px;
+}
+.logsin {
+    position:absolute;
+    right:100px;
+}
+.rank_title{
+    text-align: center;
+    margin-top:80px;
+}
+/*식단왕*/
+.rank_pic {
+    width:800px;
+    height:400px;
+    _background: red;
+    margin: 20px auto;
+}
+.grid-box {}
+
+.grid-item {
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 300px;
+    background-color: rgba(236, 250, 207, 0.9);
+    margin-left: 50px;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+
+.grid-item .king {
+    position: absolute;
+    top: -60px;
+    left: -30px;
+    transform: rotate(-17deg);
+    margin: 0;
+    z-index: 1;
+    width: 130px;
+}
+
+.grid-item > img {
+    width:50%;
+    opacity: 1;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.grid-item > p {
+    font-size: 1.6em;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/*식단왕 순위리스트*/
+.rank_lst {
+    width:500px;
+    background:#e6fac4;
+    height:890px;
+    border-radius: 10px;
+    margin:0 auto;
+}
+.rank_lst p {
+    text-align: center;
+    font-size: 2em;
+    margin:0 auto;
+    padding-top:20px;
+}
+.rank_lst ul {
+    background : lightyellow;
+    margin:20px auto;
+    width:460px;
+    height:770px;
+}
+.rank_lst ul li {
+    font-size:1.4em;
+    padding:20px;
+    text-align: center;
+    
+    
+}
+.rank_lst ul li:nth-child(3n-1) { /* 아이디  */
+    float:left;
+    margin-left:30px;
+    width:50px;
+}
+.rank_lst ul li:nth-child(3n-2) { /*  순위  */
+    float:left;
+    margin-left:70px;
+    width:30px;
+}
+.rank_lst ul li:nth-child(3n) { /* 점수  */
+    width:80px;
+    margin-left:300px;
+}

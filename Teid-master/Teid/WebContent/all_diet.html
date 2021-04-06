@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>전체식단</title>
+    <link rel="stylesheet" href="./css/all_diet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery.main.js"></script>
+    <script src="js/jquery.all_diet.js"></script>
+    
+</head>
+<body>
+   <div id="wrap">
+        <nav id="navTop">
+            <ul id="topMenu">
+                <li data-menuanchor="logo"><a href="index.html"><img src="./images/Teid_logo.png" alt="logo" class="img_logo"></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#2st">사이트 소개</a></li>
+                <li><a href="index.html#3st">추천 식단</a></li>
+                <li><a href="index.html#4st">식단왕</a></li>
+                <li><a href="index.html#5st">Contact Us</a></li>
+                <li class="mypage"><a href="mypage.html">MyPage</a></li>
+                <li class="logsin"><a href="./JSP/login.jsp">Login/SignIn</a></li>
+            </ul>
+        </nav>  
+    
+        <div id="header">
+           <div class="myDiet">
+               <h2>내 식단</h2>
+               <div class="all_diet_lst">
+                   <ul class="all_diet_cnt">
+                       <li>아침</li>
+                       <li></li>
+                   </ul>
+               </div>
+               <div class="all_diet_lst">
+                   <ul class="all_diet_cnt">
+                       <li>점심</li>
+                       <li></li>
+                   </ul>
+               </div>
+               <div class="all_diet_lst">
+                   <ul class="all_diet_cnt">
+                       <li>저녁</li>
+                       <li></li>
+                   </ul>
+               </div>
+               <div class="all_diet_lst">
+                   <ul class="all_diet_cnt">
+                       <li>간식</li>
+                       <li></li>
+                   </ul>
+               </div>
+               <div class="save_diet">
+                   <a href="#" onclick = "saveButton()">저장하기</a>
+               </div>
+           </div>
+           <!--모달창-->
+            <div class="modal_bg"></div>
+            <div class="save_modal">
+               <div class="modal_cnt">
+                  <h2>내 식단을 확인하시겠습니까?</h2>
+                  <p></p>
+               </div>
+               <div class="save_modal_close">확인</div>                
+            </div>            
+        </div>
+        <div id="contents">
+            <h2>전체 식단</h2>
+            <div class="search_ctg">
+                <select name="category" id="ctg">
+                    <option value="select">카테고리 선택</option>
+                    <option value="select">고기류</option>
+                    <option value="select">과일류</option>
+                    <option value="select">밥류</option>
+                    <option value="select">국류</option>
+                    <option value="select">음료류</option>
+                </select>
+            </div>
+            <div class="search_sch">
+               	<input type="text" placeholder="음식명 입력">
+				<button onclick = "getAllFood()">검색</button>
+				<form id="f"></form>
+            </div>
+             <table class="diet_lst">
+                <tr>
+                    <th>카테고리</th>
+                    <th>음식명</th>
+                    <th>1회 제공량</th>
+                    <th>열량</th>
+                </tr>
+                <tr>
+                    <td>생선류</td>
+                    <td class="food_name">갈치구이</td>
+                    <td>40g</td>
+                    <td>100kcal</td>
+                </tr>
+            </table> 
+        </div>
+        <!--모달창-->
+        <div class="modal_bg"></div>
+        <div class="select_time_modal">
+           <div class="modal_cnt">
+              <h2>추가할 시간대 선택</h2>
+               <input type="radio" id="bf" name="select" value="breakfast">
+               <label for="bf">아침</label>
+               <br>
+               <input type="radio" id="lc" name="select" value="lunch">
+               <label for="lc">점심</label>
+               <br>
+               <input type="radio" id="dn" name="select" value="dinner">
+               <label for="dn">저녁</label>
+               <br>
+               <input type="radio" id="sn" name="select" value="snack">
+               <label for="sn">간식</label>
+           </div>
+           <div class="modal_close">확인</div>                
+        </div>
+        <div id="footer">
+            
+        </div>
+    </div>  
+</body>
+</html>
